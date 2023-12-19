@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
+
+.container {
+    height: 600px;
+    width: 900px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.cont{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    gap: 1%;
+}
+
+.sm-cont {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+.cont-child, .big-child, .mid-child {
+    border-radius: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.cont-child {
+    width: 300px;
+    height: 100%;
+    background-color: #C3E2C2;
+    transform: scale(0);
+    animation: scale 1s linear 2s 1 forwards;
+    transition: 1s;
+}
+
+
+
+.big-child {
+    width: 700px;
+    height: 100%;
+    background-color: #C3E2C2;
+    transform: scale(0);
+    animation: scale 1s linear 1s 1 forwards;
+}
+
+.mid-child {
+    width: 450px;
+    height: 100%;
+    background-color: #C3E2C2;
+    transform: scale(0);
+    animation: scale 1s linear 3s 1 forwards;
+}
+
+@keyframes scale {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.c1 {
+    color: rgba(0, 0, 0, 0);
+    animation: fade 1s linear 4s 1 forwards;
+    transition: 1s;
+}
+.c2 {
+    color: rgba(0, 0, 0, 0);
+    animation: fade 1s linear 5s 1 forwards;
+    transition: 1s;
+}
+.c3 {
+    color: rgba(0, 0, 0, 0);
+    animation: fade 1s linear 6s 1 forwards;
+    transition: 1s;
+}
+.c4 {
+    color: rgba(0, 0, 0, 0);
+    animation: fade 1s linear 7s 1 forwards;
+    transition: 1s;
+}
+.c5 {
+    color: rgba(0, 0, 0, 0);
+    animation: fade 1s linear 8s 1 forwards;
+    transition: 1s;
+}
+.c6 {
+    color: rgba(0, 0, 0, 0);
+    animation: fade 1s linear 9s 1 forwards;
+    transition: 1s;
+}
+.c7 {
+    color: rgba(0, 0, 0, 0);
+    animation: fade 1s linear 10s 1 forwards;
+    transition: 1s;
+}
+
+.c8 {
+    color: rgba(0, 0, 0, 0);
+    animation: fade 1s linear 11s 1 forwards;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+@keyframes fade {
+    from{
+        color: rgba(0, 0, 0, 0);
+    }
+    to {
+        color: rgba(0, 0, 0, 1);
+    }
+}
+
+.spiner {
+    opacity: 0;
+    animation: dell 6.8s linear 4s 1 backwards;
+}
+
+@keyframes dell {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.c9 {
+    height: 50px;
+    width: 50px;
+    border: solid 5px lightgray;
+    border-left: solid 5px #4CB9E7;
+    border-radius: 50%;
+    animation: spin 1s linear 4s infinite;
+}
+
+@keyframes spin {
+    form {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
